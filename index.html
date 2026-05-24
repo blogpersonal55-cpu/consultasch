@@ -13,10 +13,7 @@
     .totales { background:#e0e0e0; font-weight:bold; }
     .logo { display: block; margin: 0 auto 15px auto; max-width: 120px; } /* centrado y tamaño */
     h2 { margin-top: 0; }
-    .separador td {
-    border-top: 5px solid #2196F3 !important;
-}
-  </style>
+    </style>
 </head>
 <body>
   <!-- Insignia centrada -->
@@ -85,7 +82,7 @@
           let area = col.split(" ").slice(0, -1).join(" ");
           if(!areasMostradas.has(area)){
             areasMostradas.add(area);
-            html += `<tr class="${clase}">
+            html += `<tr>
               <td>${area}</td>
               <td>${areas[area]["C1"] || ""}</td>
               <td>${areas[area]["C2"] || ""}</td>
